@@ -1,1 +1,30 @@
-webpackJsonp([0],{165:function(e,t,n){"use strict";function u(e){return e&&e.__esModule?e:{default:e}}var d=n(29),l=u(d),r=n(28),o=u(r),a=l.default.createElement("div",null,"TEST APP");o.default.render(a,document.getElementById("root"))}},[165]);
+webpackJsonp([0],{
+
+/***/ 177:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(32);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(31);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var app = _react2.default.createElement(
+	'div',
+	null,
+	'TEST APP'
+);
+
+_reactDom2.default.render(app, document.getElementById('root'));
+
+/***/ })
+
+},[177]);
+//# sourceMappingURL=index.js.map

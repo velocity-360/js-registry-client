@@ -4,38 +4,13 @@ var path = require('path')
 module.exports = {
 
 	entry: {
-		react: ['react', 'react-dom'],
-		index: './src/index.js'
+		app: './src/index.js'
 	},
 	output: {
-		filename: '[name].js',
-		path: 'dist'
+		filename: 'dist/bundle.js',
+		sourceMapFilename: 'dist/bundle.map'
 	},
 	devtool: '#source-map',
-	plugins: process.env.NODE_ENV === 'production' ? [
-		new webpack.optimize.CommonsChunkPlugin({ // used to split out our sepcified vendor script
-			name: 'react',
-			minChunks: Infinity,
-			filename: '[name].js',
-		}),
-	    new webpack.DefinePlugin({
-	        'process.env': {
-	        	'NODE_ENV': JSON.stringify('production')
-	        }
-	    }),
-    	new webpack.optimize.UglifyJsPlugin({
-    		minimize: true,
-		    compress: {
-		        warnings: true
-		    }
-    	})
-	] : [
-		new webpack.optimize.CommonsChunkPlugin({ // used to split out our sepcified vendor script
-			name: 'react',
-			minChunks: Infinity,
-			filename: '[name].js',
-		})
-	],	
 	module: {
 		loaders: [
 			{
