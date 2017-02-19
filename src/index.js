@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 const app = (
 	<div>
-		TEST APP
+		INDEX TEST
 	</div>
 )
 
